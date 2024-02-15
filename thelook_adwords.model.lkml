@@ -17,6 +17,7 @@ explore: events{
   join: sessions {
     view_label: "Sessions"
     relationship: many_to_one
+    type: full_outer
     sql_on: ${events.session_id} = ${sessions.session_id} ;;
   }
   join: products {
